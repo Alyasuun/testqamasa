@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class hwwww {
+     public static void main(String args[]){
+Scanner MyScanner = new Scanner(System.in);
+System.out.println ("Write username:");
+String user = MyScanner.next();
+String username = "Admin";
+String password = "P@ssword";
+
+if (user.equals (username)) {
+System.out.println ("Write your password:");
+String pass = MyScanner.next();
+if (pass.equals(password)) {
+    System.out.println ("Privetik, " + username + " ! Ti voshel v sistemu");
+    }
+    else {
+    System.out.println ("Nevernyi parol");
+    }}
+else {
+System.out.println ("Net takogo polzovatelya"); 
+    MyScanner.close();
+}
+}}
